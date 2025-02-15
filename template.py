@@ -15,10 +15,9 @@ List_of_files = [
      ".github/workflows/.gitkeep",                        # to protect credentials/files from being uploaded to github
     f"{project_name}/__init__.py",                        # for converting project folder into a package
     f"{project_name}/components/__init__.py"
-    f"{project_name}/entity/__init__.py",
+    f"{project_name}/entity/__init__.py",   
     f"{project_name}/config.py",
-  
-
+    
     f"{project_name}/constant/__init__.py",
     f"{project_name}/utils/__init__.py",
 
