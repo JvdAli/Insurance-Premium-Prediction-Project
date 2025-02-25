@@ -6,7 +6,7 @@ import pymongo
 
 def mongodb_client():
 
-    #creating a variable for the .env file 
+    #creating filepath for the .env file 
     ROOT_DIR = os.getcwd()
     env_file_path = os.path.join(ROOT_DIR, '.env')
 
@@ -18,7 +18,6 @@ def mongodb_client():
 
     #constructing the MongoDB connection URL using the variables
     mongo_db_url = f"mongodb+srv://{username}:{password}@{cluster_name}.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-
     print(mongo_db_url)
 
     #creating a MongoClient object 

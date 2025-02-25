@@ -1,4 +1,3 @@
-
 import os, sys
 from Insurance_Proj.exception import CustomException
 from Insurance_Proj.logger import logging
@@ -22,9 +21,9 @@ def get_collection_as_dataframe(database_name:str, collection_name:str)->pd.Data
         logging.info(f"Found columns: {df.columns}")
 
         if "_id" in df.columns:
-            logging.info(f"Dropping column: _id ")
+            logging.info(f"Dropping column: _id")
             df = df.drop("_id",axis=1)
-        logging.info(f"Row and columns in df: {df.shape}")
+            logging.info(f"Row and columns in df: {df.shape}")
         return df
     except Exception as e:
         raise CustomException(e, sys)
